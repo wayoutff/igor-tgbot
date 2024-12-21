@@ -1,0 +1,25 @@
+{
+  "name": "igor-tgbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "npx tsc && NODE_ENV=production node dist/index.js",
+    "dev": "NODE_ENV=development nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.9",
+    "telegraf": "^4.16.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  }
+}

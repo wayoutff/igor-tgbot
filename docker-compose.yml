@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  aleksey:
+    build: .
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3006:3006"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=development # production
